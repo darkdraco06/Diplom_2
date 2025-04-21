@@ -1,0 +1,7 @@
+MAIN_SITE = 'https://stellarburgers.nomoreparties.site/'
+CREATE_ORDER = MAIN_SITE + 'api/orders'
+CREATE_USER = MAIN_SITE + 'api/auth/register'
+GET_AND_PATH_USER_DATA = MAIN_SITE + 'api/auth/user'
+LOGIN_USER = MAIN_SITE + 'api/auth/login'
+USER_ORDER = MAIN_SITE + 'api/orders'
+GET_INGREDIENTS = MAIN_SITE + 'api/ingredients'

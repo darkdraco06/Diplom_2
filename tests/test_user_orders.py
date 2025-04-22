@@ -8,7 +8,8 @@ class TestUserOrders:
     @allure.title('Проверяем получение заказов авторизованного пользователя')
     @allure.description('Авторизовываемся и отправляем запрос на получение заказов пользователя. Проверяем что возвращается код 200 и что список заказов получен')
     def test_user_order_auth_user_orders_received(self, user_auth):
-        response = ApiMethod.api_method_get_user_orders_auth(user_auth)
+        token, user = user_auth
+        response = ApiMethod.api_method_get_user_orders_auth(token)
         assert response.json()['success'] == True and response.status_code == 200
 
     @allure.title('Проверяем получение заказов без авторизации пользователя')

@@ -1,0 +1,9 @@
+INGREDIENT_DATA = ["61c0c5a71d1f82001bdaaa6d", "61c0c5a71d1f82001bdaaa70", "61c0c5a71d1f82001bdaaa72"]
+TEST_NEW_EMAIL_KEY = "email"
+TEST_NEW_EMAIL_VALUE = "test_new_email@newemail.com"
+TEST_NEM_NAME_KEY = "name"
+TEST_NEW_NAME_VALUE = "test_new_name"
+NO_VALID_EMAIL_REGISTRATION = {"email": "", "password": "test_password"}
+NO_VALID_PASSWORD_REGISTRATION = {"email": "test_mail@test.com", "password": ""}
+NO_EMAIL_CREATE_USER = {"email": "", "password": "test_password", "name": "test_name"}
+NO_PASSWORD_CREATE_USER = {"email": "test_mail@test.com", "password": "", "name": "test_name"}
